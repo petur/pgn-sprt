@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pgn-sprt"
+version = "0.0.1"
+license = "GPL-3.0-or-later"
+requires-python = ">= 3.7"
+dependencies = [
+  "chess==1.10.0",
+]
+
+[project.scripts]
+pgnsprt = "pgn_sprt.pgnsprt:main"
